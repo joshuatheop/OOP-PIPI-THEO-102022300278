@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="InventoryController">
+    <VBox spacing="10.0" layoutX="20.0" layoutY="20.0">
+        <children>
+            <TableView fx:id="tableView">
+                <columns>
+                    <TableColumn fx:id="columnAlbumName" text="Album Name" />
+                    <TableColumn fx:id="columnArtist" text="Artist" />
+                    <TableColumn fx:id="columnTotal" text="Total" />
+                    <TableColumn fx:id="columnAvailable" text="Available" />
+                    <TableColumn fx:id="columnRented" text="Rented" />
+                </columns>
+            </TableView>
+            <HBox spacing="10.0">
+                <children>
+                    <TextField fx:id="albumNameField" promptText="Album Name" />
+                    <TextField fx:id="artistField" promptText="Artist" />
+                    <TextField fx:id="totalField" promptText="Total" />
+                    <TextField fx:id="availableField" promptText="Available" />
+                </children>
+            </HBox>
+            <HBox spacing="10.0">
+                <children>
+                    <Button text="Tambah" onAction="#addAlbum" />
+                    <Button text="Hapus" onAction="#deleteAlbum" />
+                    <Button text="Update" onAction="#updateAlbum" />
+                    <Button text="Rent Selected" onAction="#rentAlbum" />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+</AnchorPane>

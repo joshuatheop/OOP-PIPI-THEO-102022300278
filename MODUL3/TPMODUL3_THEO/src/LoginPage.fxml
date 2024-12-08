@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="LoginController">
+    <VBox alignment="CENTER" spacing="15.0" layoutX="100" layoutY="100.0">
+        <children>
+            <Label text="Login to Zeppeli's Listening Bar" style="-fx-font-size: 20px;" />
+            <TextField fx:id="usernameField" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Button text="Login" onAction="#handleLogin" />
+        </children>
+    </VBox>
+</AnchorPane>
